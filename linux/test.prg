@@ -1,4 +1,4 @@
-request HB_GTTRM
+request HB_GT_NUL
 
 static cResult := ""
 
