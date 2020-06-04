@@ -3,7 +3,7 @@
 #include <hbinit.h>
 
 // void ProcessAttach( void ) __attribute__((constructor));
-void ProcessDetach( void ) __attribute__((destructor));
+// void ProcessDetach( void ) __attribute__((destructor));
 
 static HB_BOOL s_bInit = HB_FALSE;
 
