@@ -11,6 +11,7 @@ dllmain.c
 test.prg
 
 -dflag=@libs.txt
+-cflag+=-g
 -dflag+=-g
 -gttrm
 

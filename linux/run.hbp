@@ -6,4 +6,5 @@ run.prg
 
 -gttrm
 
+-cflag+=-g
 -dflag+=-g

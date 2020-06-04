@@ -1,4 +1,4 @@
-request HB_GTCGI
+request HB_GTTRM
 
 static cResult := ""
 
