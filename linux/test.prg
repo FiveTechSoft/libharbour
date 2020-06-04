@@ -1,8 +1,13 @@
+request HB_GTCGI
+
 static cResult := ""
 
 function Main()
 
    cResult += "Process Attach" + hb_OsNewLine()
+
+   ? cResult
+   Printf( cResult )
 
 return nil 
 
@@ -30,3 +35,14 @@ function ProcessDetach()
    ? cResult 
 
 return nil
+
+#pragma BEGINDUMP
+
+#include <hbapi.h>
+
+HB_FUNC( PRINTF )
+{
+   printf( "%s", hb_parc( 1 ) );
+}
+
+#pragma ENDDUMP

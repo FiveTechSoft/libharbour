@@ -1,13 +1,13 @@
 #include <hbapi.h>
 #include <hbvm.h>
+#include <hbinit.h>
 
-void ProcessAttach( void ) __attribute__((constructor));
-void ProcessDetach( void ) __attribute__((destructor));
+// void ProcessAttach( void ) __attribute__((constructor));
+// void ProcessDetach( void ) __attribute__((destructor));
 
 static HB_BOOL s_bInit = HB_FALSE;
 
-void ProcessAttach( void )
-{
+HB_CALL_ON_STARTUP_BEGIN( ProcessAttach )
    if( ! hb_vmIsActive() ) // hb_vmIsReady()
    {  
       hb_vmInit( HB_FALSE );
@@ -25,8 +25,8 @@ void ProcessAttach( void )
          hb_vmRequestRestore();
       }
    } while( 0 );
-}
-
+HB_CALL_ON_STARTUP_END( ProcessAttach )
+   
 void ProcessDetach( void )
 {
    PHB_DYNS pDynSym = hb_dynsymFind( "PROCESSDETACH" );

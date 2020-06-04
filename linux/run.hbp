@@ -4,4 +4,6 @@
 
 run.prg
 
-hbwin.hbc
+-gttrm
+
+-dflag+=-g

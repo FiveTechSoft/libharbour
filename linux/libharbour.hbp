@@ -7,8 +7,12 @@
 -l-hbfship
 -l-hbxpp
 
-test.prg
 dllmain.c
+test.prg
+
+-dflag=@libs.txt
+-dflag+=-g
+-gttrm
 
 hbhpdf.hbc
 xhb.hbc
