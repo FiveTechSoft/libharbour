@@ -1,37 +1,20 @@
 request HB_GT_NUL
 
-static cResult := ""
-
 function Main()
 
-   cResult += "Process Attach" + hb_OsNewLine()
-
-   // ? cResult
+   printf( "Process Attach" )
 
 return nil 
 
-function ThreadAttach()
+function Execute( cFileName )
 
-   local n
+   printf( cFileName )
 
-   cResult += "New thread" + Str( hb_ThreadId() ) + hb_OsNewLine()
-
-   // for n = 1 to 100000
-   // next
-
-return nil
-
-function ThreadDetach()
-
-   cResult += "thread detach" + Str( hb_ThreadId() ) + hb_OsNewLine()
-
-return nil
+return "ok"   
 
 function ProcessDetach()
 
-   cResult += "Process detach" + hb_OsNewLine()
-
-   printf( cResult )
+   printf( "Process Detach" )
 
 return nil
 
@@ -41,7 +24,7 @@ return nil
 
 HB_FUNC( PRINTF )
 {
-   printf( "%s", hb_parc( 1 ) );
+   printf( "%s\n", hb_parc( 1 ) );
 }
 
 #pragma ENDDUMP
