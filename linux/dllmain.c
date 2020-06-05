@@ -7,10 +7,9 @@ void ProcessDetach( void ) __attribute__((destructor));
 
 static HB_BOOL s_bInit = HB_FALSE;
 
-// HB_CALL_ON_STARTUP_BEGIN( ProcessAttach )
 void ProcessAttach( void )
 {
-   if( ! hb_vmIsActive() ) // hb_vmIsReady()
+   if( ! hb_vmIsActive() )
    {  
       hb_vmInit( HB_FALSE );
       s_bInit = HB_TRUE;
@@ -28,7 +27,6 @@ void ProcessAttach( void )
       }
    } while( 0 );
 }   
-// HB_CALL_ON_STARTUP_END( ProcessAttach )
 
 HB_EXPORT_ATTR char * Execute( char * szFileName )
 {
