@@ -28,3 +28,5 @@ continue --> continues
 
 list --> see source code in that section
 
+info sharedlibrary --> list all sharedlibraries in use
+
