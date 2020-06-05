@@ -6,8 +6,7 @@ function Main()
 
    cResult += "Process Attach" + hb_OsNewLine()
 
-   ? cResult
-   Printf( cResult )
+   // ? cResult
 
 return nil 
 
@@ -32,7 +31,7 @@ function ProcessDetach()
 
    cResult += "Process detach" + hb_OsNewLine()
 
-   ? cResult 
+   printf( cResult )
 
 return nil
 
