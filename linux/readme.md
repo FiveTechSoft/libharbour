@@ -1,5 +1,7 @@
 Using the gdb debugger from Linux:
 
+https://users.ece.utexas.edu/~adnan/gdb-refcard.pdf
+
 1. Both the executable and the DLL must be compiled and linked using the flag -g
 
 Use this from the hbp files:
