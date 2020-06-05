@@ -18,6 +18,6 @@ function Test()
 
    local pDLL := hb_LibLoad( "./libharbour.so" )
 
-   hb_libFree( pDLL )
+   // hb_libFree( pDLL )
 
 return nil   

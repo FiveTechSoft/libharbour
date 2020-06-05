@@ -13,7 +13,6 @@ test.prg
 -dflag=@libs.txt
 -cflag+=-g
 -dflag+=-g
--gttrm
 
 hbhpdf.hbc
 xhb.hbc

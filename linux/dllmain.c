@@ -39,9 +39,9 @@ void ProcessDetach( void )
       hb_vmProc( 0 );
       hb_vmRequestRestore();
    }
-   if( s_bInit )
-   {
-      hb_vmQuit();
-      s_bInit = HB_FALSE;
-   }   
+   // if( s_bInit )
+   // {
+   //    hb_vmQuit();
+   //    s_bInit = HB_FALSE;
+   // }   
 }
